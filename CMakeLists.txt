@@ -5,8 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(FetchContent)
-
-# مكتبة عشان نعمل سيرفر ويب
 FetchContent_Declare(
     httplib
     GIT_REPOSITORY https://github.com/yhirose/cpp-httplib.git
@@ -14,7 +12,6 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(httplib)
 
-# مكتبة JSON
 find_package(nlohmann_json REQUIRED)
 
 add_executable(dibs src/main.cpp)
