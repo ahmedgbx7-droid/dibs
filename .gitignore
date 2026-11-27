@@ -1,0 +1,16 @@
+# Build output
+build/
+*.o
+*.a
+*.so
+*.tmp
+
+# Generated media / scratch files
+*.mp4
+*.wav
+*.log
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
